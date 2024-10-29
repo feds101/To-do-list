@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+     width: 100%;
+     min-height: 100vh;
+     background: linear-gradient( rgb(0, 0, 0), rgb(16, 6, 109));
+     padding: 10px;
+
+}
+
+.app{
+    width: 100%;
+    max-height: 100vh;
+    max-width: 540px;
+    background: rgb(255, 255, 255);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.app h2{
+    color:rgb(0, 0, 0);
+    align-items: center;
+    margin-bottom: 20px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:rgb(171, 162, 162) ;
+    border-radius: 30px;
+    padding-left:20px ;
+    margin-bottom:25px ;
+}
+
+input{
+    flex: auto;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 20px;
+    background: rgb(0, 64, 255);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius:30px ;
+
+    
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(/bilder/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: black;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image:url(/bilder/5610944.png) ;
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color:171, 162, 162;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 30px;
+
+}
+ul li span:hover{
+    background: #6691ee;
+}
